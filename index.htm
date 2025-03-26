@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kill</title>
+    <script>
+        let popups = [];
+
+        function openPopups() {
+            for (let i = 0; i < 100; i++) {
+                const popup = window.open('https://killsecurly.com', 'popup' + i, 'width=600,height=400');
+                if (popup) {
+                    popups.push(popup);
+                }
+            }
+        }
+
+        function closePopups() {
+            for (let i = 0; i < popups.length; i++) {
+                if (popups[i]) {
+                    popups[i].close();
+                }
+            }
+            popups = [];
+        }
+    </script>
+</head>
+<body>
+    <button onclick="openPopups()">Open 100 Popups</button>
+    <button onclick="closePopups()">Close All Popups</button>
+</body>
+</html>
