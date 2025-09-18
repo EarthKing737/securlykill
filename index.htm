@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Securly Admin Panel</title>
+    <title>kill</title>
     <script>
         let popups = [];
 
         function openPopups() {
             for (let i = 0; i < 100; i++) {
-                const popup = window.open('https://killsecurly.com', 'popup' + i, 'width=10,height=10');
+                const popup = window.open('https://killsecurly.com', 'popup' + i, 'width=600,height=400');
                 if (popup) {
                     popups.push(popup);
                 }
@@ -27,7 +27,7 @@
     </script>
 </head>
 <body>
-    <button onclick="openPopups()">Ban Securly Classroom</button>
-    <button onclick="closePopups()">Unban Securl Classroom</button>
+    <button onclick="openPopups()">Open 100 Popups</button>
+    <button onclick="closePopups()">Close All Popups</button>
 </body>
 </html>
